@@ -401,6 +401,12 @@ body.mobile-nav-active #mobile-nav-toggle {
   position: relative;
 }
 
+@media (min-width: 1024px) {
+  #home {
+    background-attachment: fixed;
+  }
+}
+
 #home:before {
   content: "";
   background: rgba(0, 0, 0, 0.4);
@@ -500,12 +506,6 @@ body.mobile-nav-active #mobile-nav-toggle {
   margin: auto;
 }
 
-@media (min-width: 992px) {
-  #about .title-bar {
-    margin: 0;
-  }
-}
-
 #about .about-container .background {
   min-height: 300px;
   /* background: url(../img/about-img.jpg) center left no-repeat; */
@@ -591,6 +591,11 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 @media (min-width: 992px) {
+
+  #about .title-bar {
+    margin: 0;
+  }
+  
   #about .about-container .section-title {
     padding-top: 0px;
     text-align: left;
