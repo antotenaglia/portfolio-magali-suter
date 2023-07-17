@@ -399,12 +399,7 @@ body.mobile-nav-active #mobile-nav-toggle {
   background-size: cover;
   background-position-y: 30%;
   position: relative;
-}
-
-@media (min-width: 1024px) {
-  #home {
-    background-attachment: fixed;
-  }
+  background-attachment: fixed;
 }
 
 #home:before {
@@ -595,7 +590,7 @@ body.mobile-nav-active #mobile-nav-toggle {
   #about .title-bar {
     margin: 0;
   }
-  
+
   #about .about-container .section-title {
     padding-top: 0px;
     text-align: left;
