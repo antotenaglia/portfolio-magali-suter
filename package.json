@@ -1,0 +1,30 @@
+{
+  "name": "magali-suter",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon ./src/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/antotenaglia/portfolio-magali-suter.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/antotenaglia/portfolio-magali-suter/issues"
+  },
+  "homepage": "https://github.com/antotenaglia/portfolio-magali-suter#readme",
+  "dependencies": {
+    "@sendgrid/mail": "^7.7.0",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2"
+  }
+}

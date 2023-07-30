@@ -56,7 +56,7 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 16px;
   border-radius: 2px;
   right: 15px;
-  bottom: 15px;
+  bottom: 20px;
   transition: background 0.5s;
 }
 
@@ -70,6 +70,34 @@ h1, h2, h3, h4, h5, h6 {
   background: #863974;
   color: #fff;
 }
+
+#whatsapp {
+  position: fixed;
+  display: none;
+  bottom: 90px;
+  right: 10px;
+  width: 60px;
+  height: 60px;
+  cursor: pointer;  
+  border-radius: 50%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+#whatsapp:hover {
+  background-color: #25d366;
+  transition: background 0.5s;
+}
+
+#whatsapp svg {
+  color: white;
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  top: 16%;
+  left: 16%;
+  
+}
+
 
 /*--------------------------------------------------------------
 # Header
@@ -189,10 +217,10 @@ h1, h2, h3, h4, h5, h6 {
   display: block;
 }
 
-.nav-menu ul ul {
+/* .nav-menu ul ul {
   top: 0;
   left: 100%;
-}
+} */
 
 .nav-menu ul li {
   min-width: 180px;
@@ -681,6 +709,12 @@ body.mobile-nav-active #mobile-nav-toggle {
   }
 }
 
+@media (max-width: 600px) {
+  #facts .phrase {
+    font-size: 25px;
+  }
+}
+
 @media (max-width: 375px) {
   #facts .phrase {
     font-size: 20px;
@@ -907,6 +941,7 @@ body.mobile-nav-active #mobile-nav-toggle {
   cursor: pointer;
   font-weight: 700;
 }
+
 
 /*--------------------------------------------------------------
 # Footer

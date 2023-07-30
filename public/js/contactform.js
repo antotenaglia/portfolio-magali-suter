@@ -40,19 +40,6 @@ jQuery(document).ready(function($) {
               ferror = ierror = true;
             }
             break;
-
-          case 'checked':
-            if (! i.is(':checked')) {
-              ferror = ierror = true;
-            }
-            break;
-
-          case 'regexp':
-            exp = new RegExp(exp);
-            if (!exp.test(i.val())) {
-              ferror = ierror = true;
-            }
-            break;
         }
         i.next('.validation').html((ierror ? (i.attr('data-msg') !== undefined ? i.attr('data-msg') : 'wrong Input') : '')).show('blind');
       }
@@ -88,7 +75,7 @@ jQuery(document).ready(function($) {
         i.next('.validation').html((ierror ? (i.attr('data-msg') != undefined ? i.attr('data-msg') : 'wrong Input') : '')).show('blind');
       }
     });
-    if (ferror) return false;
+    if (ferror) return false
     else var str = $(this).serialize();
     var action = $(this).attr('action');
     if( ! action ) {
@@ -99,7 +86,7 @@ jQuery(document).ready(function($) {
       url: action,
       data: str,
       success: function(msg) {
-        // alert(msg);
+        //alert(msg);
         if (msg == 'OK') {
           $("#sendmessage").addClass("show");
           $("#errormessage").removeClass("show");
